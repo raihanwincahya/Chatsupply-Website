@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar: #F1F4F9;
+    --primary: #567FBE;
+    --inactive: #D8D8D8;
+    --background: #FFFFFF;
+    --teks: #000000;
+    --chat-send: #88A1C9;
+    --chat-receive: #D3E0F4;
+    --time: #B0AFAF;
+    --text-chat: #CCCCCC;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: var(--navbar) !important;
+}
+
+.navbar-brand {
+    height: 1.8em;
+}
+
+.navbar-nav>.nav-item {
+    margin: 0 0 0 .8em;
+}
+
+.navbar-nav .nav-item>a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    color: var(--inactive);
+}
+
+.navbar-nav .nav-item>a.active {
+    color: var(--primary);
+    border-bottom: 4px solid var(--primary);
+}
+
+
+/* navbar */
+
+
+/* box left */
+
+.container-custom {
+    min-height: 100vh;
+}
+
+.col-sm-4 {
+    min-height: 93vh;
+    background-color: var(--background);
+    padding: 0% .5% 0 2.5%;
+}
+
+
+/* box search */
+
+.box-header {
+    width: 100%;
+}
+
+.box-header>.search {
+    position: relative;
+    margin: 4% 0;
+    width: 88%;
+}
+
+.box-header .search>input {
+    height: 4em;
+    width: 100%;
+    text-indent: 25px;
+    border: none;
+    background: var(--background);
+    box-shadow: 0px 4px 23px rgba(136, 161, 201, 0.2);
+    border-radius: 60px;
+}
+
+.box-header .search>.search-placeholder {
+    color: var(--primary);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.box-header .search input:focus {
+    box-shadow: none;
+    border: 2px solid var(--primary);
+}
+
+.box-header .search .icon-search {
+    color: var(--primary);
+    position: absolute;
+    top: 22px;
+    left: 15px;
+}
+
+.box-header .dropdown .btn {
+    border-radius: 40px;
+    background-color: var(--background);
+    border: none;
+}
+
+.box-header .dropdown .btn:focus {
+    background-color: var(--chat-receive);
+}
+
+.box-header .dropdown .btn>.icon-more {
+    font-size: 1.4em;
+    color: var(--primary);
+}
+
+.box-header .dropdown>.dropdown-menu {
+    background-color: var(--chat-send);
+    border-radius: 10px;
+}
+
+
+/* box search */
+
+
+/* box chat */
+
+.col-sm-4>.card {
+    width: 88%;
+    height: 12em;
+    border: none;
+    background: var(--navbar);
+    box-shadow: 4px 4px 26px rgba(179, 193, 217, 0.11);
+    border-radius: 20px;
+}
+
+.col-sm-4>.all-chat {
+    width: 88%;
+    height: 30em;
+    overflow-x: hidden;
+    border: none;
+    background: var(--navbar);
+    box-shadow: 4px 4px 26px rgba(179, 193, 217, 0.11);
+    border-radius: 20px;
+}
+
+.card .card-body>a {
+    text-decoration: none;
+}
+
+.card .box {
+    cursor: pointer;
+}
+
+.card .box-notif>.card-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .7em;
+    color: var(--teks);
+}
+
+.card .box-wrapper .box-name-chat>.card-text {
+    font-size: .9em;
+    color: var(--text-chat);
+}
+
+.card .box-notif .circle-notif {
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 30px;
+    background-color: var(--primary);
+}
+
+.card .box-notif .circle-notif>.notif {
+    font-size: .9em;
+    color: var(--background);
+    margin: -3% 27%;
+}
+
+
+/* box chat */
+
+
+/* box left */
+
+
+/* box right */
+
+.col-sm-8>.header-chat {
+    width: 96%;
+    margin: 2% 4% 4% 0;
+}
+
+.header-chat .box-wrapper-chat>img {
+    height: 3em;
+    width: 3em;
+    border-radius: 40px;
+}
+
+.header-chat .dropdown .btn {
+    border-radius: 40px;
+    background-color: var(--background);
+    border: none;
+}
+
+.header-chat .dropdown .btn:focus {
+    background-color: var(--chat-receive);
+}
+
+.header-chat .dropdown .btn>.icon-more {
+    font-size: 1.4em;
+    color: var(--primary);
+}
+
+.header-chat .dropdown>.dropdown-menu {
+    background-color: var(--chat-send);
+    border-radius: 10px;
+}
+
+.header-chat .box-wrapper-chat>.name-user-chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+}
+
+.box-chat {
+    width: 96%;
+    margin: 3% 0 4%;
+    min-height: 70vh;
+    overflow-x: hidden;
+    /* padding: 2% 3%; */
+    background: url('./media/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 17px rgba(136, 161, 201, 0.22);
+    border-radius: 30px;
+}
+
+.box-chat-notif {
+    padding: .3em 1em;
+    border-radius: 17px;
+    width: 17%;
+    margin-left: 40%;
+    background-color: var(--text-chat);
+}
+
+.box-chat-send>.content-text {
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    background-color: var(--chat-send);
+}
+
+.box-chat-send>.time,
+.box-chat-receive>.time {
+    top: 62%;
+    font-size: .7em;
+    left: 12%;
+    color: var(--time);
+}
+
+.box-chat-send {
+    left: 6%;
+}
+
+.box-chat-receive {
+    left: 65%;
+}
+
+.box-chat-receive>.content-text {
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    background-color: var(--chat-receive);
+}
+
+.box-chat>.box-input {
+    height: 5em;
+    width: 70%;
+    border-radius: 60px;
+}
+
+.input-box {
+    padding: 0 0 0 5%;
+}
+
+.icon-input {
+    color: var(--primary);
+    position: absolute;
+    font-size: 1.7em;
+    margin-top: 3%;
+    left: 1%;
+}
+
+.icon-attach {
+    left: 6%;
+    margin-top: 3%;
+    color: var(--primary);
+    position: absolute;
+    font-size: 1.7em;
+}
+
+.icon-mic {
+    left: 94%;
+    margin-top: 3%;
+    color: var(--primary);
+    position: absolute;
+    font-size: 1.7em;
+}
+
+.box-name-chat>.text-custom,
+.box-notif>.text-custom {
+    color: var(--primary);
+}
+
+.box-footer {
+    background-color: var(--navbar);
+    bottom: 0;
+    height: 4rem;
+    top: .8rem;
+}
+
+.search-input {
+    width: 80%;
+    margin-left: 12%;
+    background-color: var(--background);
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 1.4%;
+}
+
+.search-input>.input {
+    border: none;
+    height: 3em;
+}
+
+
+/* box right */
+
+
+/* chat screen */
+
+.col-sm-8>img {
+    width: 100%;
+    height: 42em;
+}
+
+
+/* chat screen */

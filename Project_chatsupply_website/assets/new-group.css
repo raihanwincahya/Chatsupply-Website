@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --teks: #000000;
+    --navbar: #F1F4F9;
+    --primary: #567FBE;
+    --inactive: #D8D8D8;
+    --background: #FFFFFF;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: var(--navbar) !important;
+}
+
+.navbar-brand {
+    height: 1.8em;
+}
+
+
+/* navbar */
+
+
+/* new group */
+
+.container-custom {
+    min-height: 100vh;
+}
+
+.box-container {
+    padding: 0 3%;
+}
+
+.box-custom {
+    height: 30%;
+    background-color: var(--background);
+    box-shadow: 10px 10px 20px rgba(86, 127, 190, 0.06);
+}
+
+.col-sm-3,
+.colsm-8 {
+    min-height: 84vh;
+}
+
+.box-heading a>.icon {
+    margin-top: 1px;
+    font-size: 1.4em;
+    color: var(--primary);
+}
+
+.box-partisipant input {
+    border: none;
+    background: var(--background);
+    width: 100%;
+}
+
+.box-partisipant>.horizontal-line {
+    border: 1px solid var(--primary);
+    margin-top: .15em;
+}
+
+.box-contact>img {
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 26px;
+}
+
+.box-contact .description>.name-user {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    color: var(--teks);
+}
+
+.box-contact .description>.bio {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+    margin-top: -5px;
+    color: var(--inactive);
+}
+
+.col-sm-8>.ui {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* new group */
+
+
+/* language */
+
+.box-contact>.icon-radio-off,
+.box-contact>.icon-radio-on {
+    margin-top: 7px;
+    color: var(--primary);
+}
+
+
+/* language */
+
+
+/* notification */
+
+.box-notification {
+    height: 5%;
+    min-height: 55vh;
+    background-color: var(--background);
+    box-shadow: 4px 4px 10px rgba(86, 127, 190, 0.25);
+}
+
+p.heading-menu-notif {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+    color: var(--teks);
+}
+
+p.description-menu-notif {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--inactive);
+    font-size: .6em;
+    margin-top: -7%;
+}
+
+.icon-checkbox {
+    color: var(--primary);
+}
+
+
+/* notification */
+
+
+/* archive */
+
+.text-name {
+    color: var(--primary);
+}
+
+p.card-text {
+    color: var(--inactive);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+}
+
+
+/* archive */

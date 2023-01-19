@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --teks: #000000;
+    --navbar: #F1F4F9;
+    --primary: #567FBE;
+    --inactive: #D8D8D8;
+    --background: #FFFFFF;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: var(--navbar) !important;
+}
+
+.navbar-brand {
+    height: 1.8em;
+}
+
+.navbar-nav>.nav-item {
+    margin: 0 0 0 .8em;
+}
+
+.navbar-nav .nav-item>a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    color: var(--inactive);
+}
+
+.navbar-nav .nav-item>a.active {
+    color: var(--primary);
+    border-bottom: 4px solid var(--primary);
+}
+
+
+/* navbar */
+
+
+/* profile account */
+.container-custom {
+    min-height: 100vh;
+}
+
+.box-fitur {
+    cursor: pointer;
+}
+
+.box-container {
+    padding: 0 3%;
+}
+
+.box-container .box-fitur>a {
+    color: var(--teks);
+}
+
+.box-custom {
+    height: 30%;
+    background-color: var(--background);
+    box-shadow: 10px 10px 20px rgba(86, 127, 190, 0.06);
+}
+
+.col-sm-3,
+.colsm-8 {
+    min-height: 84vh;
+}
+
+.col-sm-3 .box-account {
+    padding: 0 3%;
+}
+
+.col-sm-3 .box-account>img {
+    height: 4em;
+    width: 4em;
+    border-radius: 50px;
+}
+
+.col-sm-3 .box-account .description-account>.name-user {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    color: var(--teks);
+}
+
+.col-sm-3 .box-account .description-account>.telp {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+    color: var(--inactive);
+}
+
+.col-sm-3 .box-fitur .box-fitur-wrapper>.icon {
+    font-size: 1.4em;
+}
+
+.col-sm-3 .box-fitur .box-fitur-wrapper>.text-toggle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .7em;
+}
+
+.fi-toggle-off {
+    color: var(--primary);
+}
+
+.col-sm-8>.ui {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* profile account */

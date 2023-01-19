@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- for bootstrap cdn -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- fontisto icon cdn -->
+    <link rel="stylesheet" href="./assets/fontisto-master/css/fontisto/fontisto.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/profile.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg px-5">
+        <div class="navbar-brand">
+            <img src="./assets/media/brand.png" alt="brand" height="90%">
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="HomeScreen.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ChatScreen.html">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <div class="container-fluid container-custom">
+
+        <!-- content -->
+        <div class="row box-container">
+            <div class="col-sm-3  mt-5 box-custom">
+                <div class="box-account d-flex mb-2 ">
+                    <img src="./assets/media/pisang.jpg" alt="">
+                    <div class="description-account ms-3 mt-2">
+                        <h6 class="name-user">Raihan Dwi Win Cahya</h6>
+                        <p class="telp">089654907201</p>
+                    </div>
+                </div>
+                <!-- about -->
+                <div class="box-fitur d-flex justify-content-between  align-items-center mb-1">
+                    <div class="box-fitur-wrapper d-flex align-items-center">
+                        <ion-icon name="language" class="icon" style="color: #F28A02;"></ion-icon>
+                        <p class="text-fitur ms-3 mt-3">Language</p>
+                    </div>
+                    <a href="Language.html">
+                        <ion-icon name="chevron-forward" class="icon-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="box-fitur d-flex justify-content-between align-items-center mb-1">
+                    <div class="box-fitur-wrapper d-flex align-items-center">
+                        <ion-icon name="notifications" class="icon" style="color: #30BAD9;"></ion-icon>
+                        <p class="text-fitur ms-3 mt-3">Notification</p>
+                    </div>
+                    <a href="Notification.html">
+                        <ion-icon name="chevron-forward" class="icon-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="box-fitur d-flex justify-content-between align-items-center mb-1">
+                    <div class="box-fitur-wrapper d-flex  align-items-center">
+                        <ion-icon name="moon" class="icon" style="color: #750FF2;"></ion-icon>
+                        <p class="text-fitur ms-3 mt-3">Dark Mode</p>
+                    </div>
+                    <div class="box-fitur-wrapper d-flex  align-items-center">
+                        <p class="text-toggle me-3 mt-3">Off</p>
+                        <i class="fi fi-toggle-off icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 offset-1  mt-5">
+                <img src="./assets/media/ui.jpg" alt="" class="ui">
+            </div>
+        </div>
+        <!-- content -->
+
+    </div>
+
+
+
+
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ionicons -->
+</body>
+
+</html>

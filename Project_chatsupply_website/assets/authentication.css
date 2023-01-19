@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #567FBE;
+    --white: #FFFFFF;
+    --gray: #CCCCCC;
+    --grey: #888888;
+    --black: #555555;
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+.boxWrapper {
+    background: var(--white);
+    box-shadow: 10px 10px 20px rgba(86, 127, 190, 0.06);
+}
+
+.icon>img {
+    width: 100%;
+}
+
+.heading {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 50px;
+    color: var(--primary);
+}
+
+.form-control {
+    width: 90%;
+    margin: 0 5%;
+    border: none;
+    filter: drop-shadow(4px 4px 10px rgba(86, 127, 190, 0.06));
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+.btn-blue {
+    width: 90%;
+    background-color: var(--primary);
+}
+
+.btn-blue>a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.85em;
+    line-height: 33px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn-blue:hover {
+    color: var(--white);
+}
+
+.forgot {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 30px;
+    margin-top: 1em;
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8em;
+    color: var(--gray);
+    background: var(--white);
+    box-shadow: 10px 10px 20px rgba(86, 127, 190, 0.06);
+}
+
+.card-body span a {
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+
+/* sign up */
+
+.description {
+    font-family: 'Poppins';
+    width: 90%;
+    margin: 0 5%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 36px;
+    color: var(--gray);
+}
+
+.btn-login {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.term {
+    width: 90%;
+    margin: 0 5%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .7em;
+    color: var(--gray);
+}
+
+.term span {
+    color: var(--black);
+}
+
+.loginBtn {
+    background-color: var(--primary);
+    width: 90%;
+    margin: 0 5%;
+}
+
+.signUpLogin {
+    color: var(--white);
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+/* sign up */
